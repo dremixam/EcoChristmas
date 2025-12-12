@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Project Path="Eco.Client.Utils.csproj" />
+  <Project Path="ThirdPartyPublic.csproj" />
+  <Project Path="Eco.Client.csproj" />
+  <Project Path="Editor.EcoModKit.csproj" />
+</Solution>
