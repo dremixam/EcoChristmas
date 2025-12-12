@@ -56,7 +56,7 @@ namespace Eco.Mods.TechTree
 
     static class ChristmasHousingValues
     {
-        private static readonly LocString HolidayLimit = Localizer.DoStr("Décoration de Noël");
+        private static readonly LocString HolidayLimit = Localizer.DoStr("Christmas decoration");
 
         public static HomeFurnishingValue Create<TObject>(float baseValue, string roomCategory = "Decoration")
             where TObject : WorldObject
@@ -81,7 +81,7 @@ namespace Eco.Mods.TechTree
     public partial class SmallInflatableSantaObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(SmallInflatableSantaItem);
-        public override LocString DisplayName => Localizer.DoStr("Père Noël gonflable");
+        public override LocString DisplayName => Localizer.DoStr("Inflatable Santa");
         public override TableTextureMode TableTexture => TableTextureMode.Canvas;
         protected override void Initialize()
         {
@@ -111,7 +111,7 @@ namespace Eco.Mods.TechTree
             ObjectName = typeof(SmallInflatableSantaObject).UILink(),
             Category = HousingConfig.GetRoomCategory("Decoration"),
             BaseValue = 3f,
-            TypeForRoomLimit = Localizer.DoStr("Décoration de Noël"),
+            TypeForRoomLimit = Localizer.DoStr("Christmas decoration"),
             DiminishingReturnMultiplier = 0.5f,
         };
     }
@@ -125,7 +125,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "SmallInflatableSanta",
-                displayName: Localizer.DoStr("Père Noël gonflable"),
+                displayName: Localizer.DoStr("Inflatable Santa"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -145,7 +145,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(SmallInflatableSantaRecipe), start: 8, skillType: typeof(TailoringSkill), typeof(TailoringFocusedSpeedTalent), typeof(TailoringParallelSpeedTalent));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Père Noël gonflable"), recipeType: typeof(SmallInflatableSantaRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Inflatable Santa"), recipeType: typeof(SmallInflatableSantaRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(TailoringTableObject), recipeFamily: this);
@@ -169,7 +169,7 @@ namespace Eco.Mods.TechTree
     public partial class ChristmasTreeSmallObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(ChristmasTreeSmallItem);
-        public override LocString DisplayName => Localizer.DoStr("Petit sapin de Noël");
+        public override LocString DisplayName => Localizer.DoStr("Small Christmas Tree");
         public override TableTextureMode TableTexture => TableTextureMode.Wood;
 
         protected override void Initialize()
@@ -195,7 +195,7 @@ namespace Eco.Mods.TechTree
     public partial class ChristmasTreeMediumObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(ChristmasTreeMediumItem);
-        public override LocString DisplayName => Localizer.DoStr("Sapin de Noël moyen");
+        public override LocString DisplayName => Localizer.DoStr("Medium Christmas Tree");
         public override TableTextureMode TableTexture => TableTextureMode.Wood;
         protected override void Initialize()
         {
@@ -219,7 +219,7 @@ namespace Eco.Mods.TechTree
     public partial class ChristmasTreeLargeObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(ChristmasTreeLargeItem);
-        public override LocString DisplayName => Localizer.DoStr("Grand sapin de Noël");
+        public override LocString DisplayName => Localizer.DoStr("Large Christmas Tree");
         public override TableTextureMode TableTexture => TableTextureMode.Wood;
 
         protected override void Initialize()
@@ -244,7 +244,7 @@ namespace Eco.Mods.TechTree
     public partial class ChristmasTreeHugeObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(ChristmasTreeHugeItem);
-        public override LocString DisplayName => Localizer.DoStr("Immense sapin de Noël");
+        public override LocString DisplayName => Localizer.DoStr("Huge Christmas Tree");
         public override TableTextureMode TableTexture => TableTextureMode.Wood;
 
         protected override void Initialize()
@@ -324,7 +324,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "ChristmasTreeSmall",
-                displayName: Localizer.DoStr("Petit sapin de Noël"),
+                displayName: Localizer.DoStr("Small Christmas Tree"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -343,7 +343,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ChristmasTreeSmallRecipe), start: 6, skillType: typeof(LoggingSkill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Petit sapin de Noël"), recipeType: typeof(ChristmasTreeSmallRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Small Christmas Tree"), recipeType: typeof(ChristmasTreeSmallRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(CarpentryTableObject), recipeFamily: this);
@@ -362,7 +362,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "ChristmasTreeMedium",
-                displayName: Localizer.DoStr("Sapin de Noël moyen"),
+                displayName: Localizer.DoStr("Medium Christmas Tree"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -382,7 +382,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ChristmasTreeMediumRecipe), start: 7, skillType: typeof(LoggingSkill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Sapin de Noël moyen"), recipeType: typeof(ChristmasTreeMediumRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Medium Christmas Tree"), recipeType: typeof(ChristmasTreeMediumRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(CarpentryTableObject), recipeFamily: this);
@@ -401,7 +401,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "ChristmasTreeLarge",
-                displayName: Localizer.DoStr("Grand sapin de Noël"),
+                displayName: Localizer.DoStr("Large Christmas Tree"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -422,7 +422,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ChristmasTreeLargeRecipe), start: 8, skillType: typeof(LoggingSkill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Grand sapin de Noël"), recipeType: typeof(ChristmasTreeLargeRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Large Christmas Tree"), recipeType: typeof(ChristmasTreeLargeRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(CarpentryTableObject), recipeFamily: this);
@@ -441,7 +441,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "ChristmasTreeHuge",
-                displayName: Localizer.DoStr("Immense sapin de Noël"),
+                displayName: Localizer.DoStr("Huge Christmas Tree"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -463,7 +463,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ChristmasTreeHugeRecipe), start: 10, skillType: typeof(LoggingSkill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Immense sapin de Noël"), recipeType: typeof(ChristmasTreeHugeRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Huge Christmas Tree"), recipeType: typeof(ChristmasTreeHugeRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(CarpentryTableObject), recipeFamily: this);
@@ -488,7 +488,7 @@ namespace Eco.Mods.TechTree
     public partial class PresentSmallObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(PresentSmallItem);
-        public override LocString DisplayName => Localizer.DoStr("Petit cadeau");
+        public override LocString DisplayName => Localizer.DoStr("Small Present");
         public override TableTextureMode TableTexture => TableTextureMode.Canvas;
 
         protected override void Initialize()
@@ -518,7 +518,7 @@ namespace Eco.Mods.TechTree
     public partial class PresentMediumObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(PresentMediumItem);
-        public override LocString DisplayName => Localizer.DoStr("Cadeau moyen");
+        public override LocString DisplayName => Localizer.DoStr("Medium Present");
         public override TableTextureMode TableTexture => TableTextureMode.Canvas;
 
         protected override void Initialize()
@@ -548,7 +548,7 @@ namespace Eco.Mods.TechTree
     public partial class PresentLargeObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(PresentLargeItem);
-        public override LocString DisplayName => Localizer.DoStr("Grand cadeau");
+        public override LocString DisplayName => Localizer.DoStr("Large Present");
         public override TableTextureMode TableTexture => TableTextureMode.Canvas;
 
         protected override void Initialize()
@@ -578,7 +578,7 @@ namespace Eco.Mods.TechTree
     public partial class PresentHugeObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(PresentHugeItem);
-        public override LocString DisplayName => Localizer.DoStr("Énorme cadeau");
+        public override LocString DisplayName => Localizer.DoStr("Huge Present");
         public override TableTextureMode TableTexture => TableTextureMode.Canvas;
         protected override void Initialize()
         {
@@ -662,7 +662,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "PresentSmall",
-                displayName: Localizer.DoStr("Petit cadeau"),
+                displayName: Localizer.DoStr("Small Present"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -681,7 +681,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(PresentSmallRecipe), start: 1, skillType: typeof(Skill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Cadeau petit"), recipeType: typeof(PresentSmallRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Little Present"), recipeType: typeof(PresentSmallRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(WorkbenchObject), recipeFamily: this);
@@ -699,7 +699,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "PresentMedium",
-                displayName: Localizer.DoStr("Cadeau moyen"),
+                displayName: Localizer.DoStr("Medium Present"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -718,7 +718,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(PresentMediumRecipe), start: 2, skillType: typeof(Skill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Cadeau moyen"), recipeType: typeof(PresentMediumRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Medium Present"), recipeType: typeof(PresentMediumRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(WorkbenchObject), recipeFamily: this);
@@ -736,7 +736,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "PresentLarge",
-                displayName: Localizer.DoStr("Cadeau gros"),
+                displayName: Localizer.DoStr("Big Present"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -755,7 +755,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(PresentLargeRecipe), start: 3, skillType: typeof(Skill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Cadeau gros"), recipeType: typeof(PresentLargeRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Big Present"), recipeType: typeof(PresentLargeRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(WorkbenchObject), recipeFamily: this);
@@ -773,7 +773,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "PresentHuge",
-                displayName: Localizer.DoStr("Cadeau énorme"),
+                displayName: Localizer.DoStr("Enormous Present"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -792,7 +792,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(PresentHugeRecipe), start: 4, skillType: typeof(Skill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Cadeau énorme"), recipeType: typeof(PresentHugeRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Enormous Present"), recipeType: typeof(PresentHugeRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(WorkbenchObject), recipeFamily: this);
@@ -815,7 +815,7 @@ namespace Eco.Mods.TechTree
     public partial class SnowmanObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(SnowmanItem);
-        public override LocString DisplayName => Localizer.DoStr("Bonhomme de neige");
+        public override LocString DisplayName => Localizer.DoStr("Snowman");
         public override TableTextureMode TableTexture => TableTextureMode.Canvas;
 
         protected override void Initialize()
@@ -851,7 +851,7 @@ namespace Eco.Mods.TechTree
             var recipe = new Recipe();
             recipe.Init(
                 name: "Snowman",
-                displayName: Localizer.DoStr("Bonhomme de neige"),
+                displayName: Localizer.DoStr("Snowman"),
 
                 ingredients: new List<IngredientElement>
                 {
@@ -872,7 +872,7 @@ namespace Eco.Mods.TechTree
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(SnowmanRecipe), start: 4, skillType: typeof(Skill));
 
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Bonhomme de neige"), recipeType: typeof(SnowmanRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Snowman"), recipeType: typeof(SnowmanRecipe));
             this.ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(WorkbenchObject), recipeFamily: this);
