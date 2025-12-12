@@ -44,13 +44,13 @@ namespace Eco.Mods.TechTree
     using Eco.Gameplay.Items.Recipes;
     using Eco.Core.Plugins.Interfaces;
 
-    public class ChristmasItems : IModInit
+    public class WinterHolidayItems : IModInit
     {
         public static ModRegistration Register() => new()
         {
-            ModName = "ChristmasItems",
-            ModDescription = "ChristmasItems est un mod qui ajoute des décorations de Noël festives au jeu Eco.",
-            ModDisplayName = "Christmas Items",
+            ModName = "WinterHolidayItems",
+            ModDescription = "WinterHolidayItems est un mod qui ajoute des décorations de fêtes de fin d'année festives au jeu Eco.",
+            ModDisplayName = "Winter Holiday Items",
         };
     }
 
