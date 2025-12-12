@@ -66,7 +66,7 @@ namespace Eco.Mods.TechTree
                 Category = HousingConfig.GetRoomCategory(roomCategory),
                 BaseValue = baseValue,
                 TypeForRoomLimit = HolidayLimit,
-                DiminishingReturnMultiplier = 0.6f,
+                DiminishingReturnMultiplier = 0.75f,
             };
     }
 
@@ -95,8 +95,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Père Noël gonflable")]
-    [LocDescription("Une décoration gonflable qui apporte instantanément l'esprit de Noël dans votre jardin.")]
+    [LocDisplayName("Inflatable Santa")]
+    [LocDescription("An inflatable decoration that instantly brings the Christmas spirit to your garden.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -259,8 +259,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Petit sapin de Noël")]
-    [LocDescription("Un sapin compact parfait pour les espaces restreints.")]
+    [LocDisplayName("Small Christmas Tree")]
+    [LocDescription("A compact tree that's perfect for tight spaces.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -274,8 +274,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Sapin de Noël moyen")]
-    [LocDescription("Un sapin généreusement garni qui illumine n'importe quel salon.")]
+    [LocDisplayName("Medium Christmas Tree")]
+    [LocDescription("A generously decorated tree that brightens any living room.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -288,8 +288,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Grand sapin de Noël")]
-    [LocDescription("Une pièce maîtresse majestueuse qui attire tous les regards.")]
+    [LocDisplayName("Large Christmas Tree")]
+    [LocDescription("A majestic centerpiece that draws every eye.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -302,8 +302,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Immense sapin de Noël")]
-    [LocDescription("Le symbole ultime des fêtes, couvert de décorations scintillantes.")]
+    [LocDisplayName("Huge Christmas Tree")]
+    [LocDescription("The ultimate holiday symbol, covered in sparkling ornaments.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -595,8 +595,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Cadeau petit")]
-    [LocDescription("Un petit cadeau soigneusement emballé à mettre sous le sapin.")]
+    [LocDisplayName("Small Present")]
+    [LocDescription("A small present carefully wrapped to place under the tree.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -610,8 +610,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Cadeau moyen")]
-    [LocDescription("Un cadeau moyen qui attire le regard autour du sapin.")]
+    [LocDisplayName("Medium Present")]
+    [LocDescription("A medium-sized gift that stands out around the tree.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -625,8 +625,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Cadeau gros")]
-    [LocDescription("Une boîte massive prête à être ouverte au pied du sapin.")]
+    [LocDisplayName("Large Present")]
+    [LocDescription("A massive box ready to be opened at the foot of the tree.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -640,8 +640,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Cadeau énorme")]
-    [LocDescription("Un très gros cadeau coloré pour célébrer les fêtes.")]
+    [LocDisplayName("Huge Present")]
+    [LocDescription("A very large, colorful present to celebrate the holidays.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
@@ -830,8 +830,8 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [LocDisplayName("Bonhomme de neige")]
-    [LocDescription("Un compagnon givré qui dure bien plus longtemps qu'un vrai amas de neige.")]
+    [LocDisplayName("Snowman")]
+    [LocDescription("A frosty companion that lasts far longer than a real pile of snow.")]
     [Ecopedia("Crafted Objects", "Décorations de Noël", createAsSubPage: true)]
     [Tag("Housing")]
     [Tag("WinterHoliday")]
